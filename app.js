@@ -85,8 +85,12 @@ for(let i = 0 ; i < numberClass.length ; i ++ ){
             return ;
 
         }
-
         
     })
 }
+
+const clearButton = document.getElementById('clear-btn') ;
+clearButton.addEventListener("click",function(){
+    serviceList.innerText = '';
+})
 

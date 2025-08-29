@@ -51,7 +51,17 @@ service.innerHTML = number ;
 
 for(let i = 0 ; i < numberClass.length ; i ++ ){
     numberClass[i].addEventListener("click",function(){
-        alert('hello') ;
+
+        let copynum = serviceName.innerHTML ;
+        let serviceNum  = serviceNumber.innerHTML ;
+
+        alert(copynum + "\n" + serviceNum);
+
+        
+        if(number < 20 ){
+            alert ("not a amount ")
+            return ;
+        }
         number = number - 20 ;
         service.innerHTML = number ;
 
@@ -79,12 +89,6 @@ for(let i = 0 ; i < numberClass.length ; i ++ ){
         li.appendChild(div);
         li.appendChild(span)
         serviceList.appendChild(li);
-
-        if(number < 20){
-            alert("apnar tk nei")
-            return ;
-
-        }
         
     })
 }

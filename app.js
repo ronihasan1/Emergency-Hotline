@@ -72,7 +72,7 @@ for(let i = 0 ; i < numberClass.length ; i ++ ){
         
         const span = document.createElement("span") ;
         const timezone = new Date() ;
-        span.innerHTML = timezone.toLocaleTimeString(); 
+        span.innerHTML = timezone.toLocaleString(); 
         
         div.appendChild(h1)
         div.appendChild(p)
